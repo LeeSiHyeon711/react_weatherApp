@@ -10,7 +10,7 @@ function App() {
 
   // eslint-disable-next-line no-undef
   React.useEffect(() => {
-    fetch("https://api.openweathermap.org/data/2.5/weather?lat=43.0618&lon=141.3545&appid=7e74fcaea25d17b816ce78868c151c59&units=metric")
+    fetch("https://api.openweathermap.org/data/2.5/weather?lat=43.0618&lon=141.3545&appid=[key]&units=metric")
         .then(result => result.json())
         .then(jsonresult => {
           setTemp(jsonresult.main.temp);
